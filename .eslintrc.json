@@ -5,5 +5,10 @@
   "parser": "babel-eslint",
   "extends": [
     "plugin:flowtype/recommended"
-  ]
+  ],
+  "rules": {
+    "flowtype/define-flow-type": "warn",
+    "flowtype/use-flow-type": "warn",
+    "flowtype/require-parameter-type": "warn"
+  }
 }
