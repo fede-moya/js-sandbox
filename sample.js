@@ -1,5 +1,3 @@
-// @flow
-
 // Missing type for the parameter. This should raise an issue.
 function square(n) {
   return n * n;
