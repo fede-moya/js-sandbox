@@ -1,0 +1,17 @@
+{
+  "name": "js-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.8.1",
+    "eslint-plugin-flowtype": "^5.8.2"
+  }
+}
