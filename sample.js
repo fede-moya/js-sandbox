@@ -32,3 +32,9 @@ const anotherUser: { id: number, name: string } = {
   id: "456",
   name: "Doe"
 };
+
+// Using a string where a number is expected. This should raise an issue.
+const anotherAccount: { id: number, name: string } = {
+  id: "454241246",
+  name: "Foobar"
+};
