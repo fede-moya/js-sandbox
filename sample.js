@@ -1,43 +1,34 @@
 // @flow
 
-// Using a variable before declaration should trigger an ESLint warning.
-const result = square(undeclaredVar);
-console.log("Result: " + result);
-
-// Missing type for the parameter
+// Missing type for the parameter. This should raise an issue.
 function square(n) {
-  // Using == instead of === should trigger an ESLint warning.
-  if (n == undefined) {
-    return 0;
-  }
   return n * n;
 }
 
-// Incorrect type (should be string)
+// Incorrect type (should be string). This should raise an issue.
 function greet(name: number): string {
-  // Using var instead of let/const should trigger an ESLint warning.
-  var greeting = "Hello, " + name;
-  return greeting;
+  return "Hello, " + name;
 }
 
-// Unused type alias
+// Unused type alias. This should raise an issue.
 type MyObject = {
   id: number,
   name: string
 };
 
-// Missing return type annotation
+// Missing return type annotation. This should raise an issue.
 function add(a: number, b: number) {
-  // Unnecessary semicolon should trigger an ESLint warning.
-  return a + b;;
+  return a + b;
 }
 
-// Missing type annotation for property
 const user = {
   id: 123,
-  // Missing type annotation for property
+  // Missing type annotation for property. This might raise an issue.
   name: "John"
 };
 
-// Unused variable should trigger an ESLint warning.
-const unusedVariable = "I'm unused";
+// Using a string where a number is expected. This should raise an issue.
+const anotherUser: { id: number, name: string } = {
+  id: "456",
+  name: "Doe"
+};
