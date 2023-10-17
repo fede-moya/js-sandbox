@@ -2,6 +2,7 @@
 
 // Using a variable before declaration should trigger an ESLint warning.
 const result = square(undeclaredVar);
+console.log("Result: " + result);
 
 // Missing type for the parameter
 function square(n) {
