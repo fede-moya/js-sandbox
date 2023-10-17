@@ -1,18 +1,10 @@
-// Missing type for the parameter. This should raise an issue.
 function square(n) {
   return n * n;
 }
 
-// Incorrect type (should be string). This should raise an issue.
 function greet(name: number): string {
   return "Hello, " + name;
 }
-
-// Unused type alias. This should raise an issue.
-type MyObject = {
-  id: number,
-  name: string
-};
 
 // Missing return type annotation. This should raise an issue.
 function add(a: number, b: number) {
