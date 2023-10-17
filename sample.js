@@ -1,3 +1,4 @@
+// bump
 function square(n) {
   return n * n;
 }
