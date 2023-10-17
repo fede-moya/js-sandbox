@@ -2,6 +2,6 @@ version: '2'
 plugins:
   eslint:
     enabled: true
-    channel: 'eslint-7'
+    channel: 'eslint-8'
     config:
       config: .eslintrc.json
