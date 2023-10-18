@@ -366,8 +366,5 @@
       "version": "17.0.2"
     }
   },
-  "parser": "@babel/eslint-parser",
-   "parserOptions": {
-      "requireConfigFile": false
-    }
+  "parser": "babel-eslint"
 }
