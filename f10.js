@@ -1,3 +1,4 @@
+// @flow
 import ACTION from '../work_action_constant';
  
 const ats = (
